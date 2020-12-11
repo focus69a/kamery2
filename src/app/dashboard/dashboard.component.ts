@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  czyWyswietlicTabele = false;
+  czyWyswietlicPodlad = true;
   constructor() { }
 
   ngOnInit(): void {
