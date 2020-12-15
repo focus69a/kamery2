@@ -42,5 +42,9 @@ export class HeaderComponent implements OnInit {
     this.czyWyswietlicLogowanie = true;
   }
 
+  onClickTest(): void {                       //testowe do usuniecia pozniej
+    this.czyWyswietlicLogowanie = true;
+  }
+
 
 }
