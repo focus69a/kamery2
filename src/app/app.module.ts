@@ -10,7 +10,6 @@ import { PodgladComponent } from './dashboard/podglad/podglad.component';
 import { PreferencjeComponent } from './dashboard/preferencje/preferencje.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
-import { WierszComponent } from './dashboard/tabela/wiersz/wiersz.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { WierszComponent } from './dashboard/tabela/wiersz/wiersz.component';
     PodgladComponent,
     PreferencjeComponent,
     DashboardComponent,
-    HeaderComponent,
-    WierszComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule

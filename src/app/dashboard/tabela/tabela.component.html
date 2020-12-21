@@ -1,5 +1,5 @@
 <p>tabela works!</p>
-
+ <!-- [zdarzenieZtabeli]="TabelaZdarzen[0]" -->
 <table class="table table-hover">
   <thead class="thead-dark">
     <tr>
@@ -16,6 +16,7 @@
       <td>{{czasJakiUplynal[0]}} sec</td>
       <td>{{alertTyp[tabela10Komunikatow[0]]}}</td>
       <!-- <td><button type="button" class="btn btn-warning">Wyświetl</button></td> -->
+
       <td><button type="button" class=btn [ngClass]="{'btn-warning': znacznikStyluKlawisza[0]==0, 'btn-secondary': znacznikStyluKlawisza[0]==1}">Wyświetl</button></td>
       <td> <span *ngIf= "znacznikWyswietlania[0]">{{znacznik}}</span> </td>
     </tr>

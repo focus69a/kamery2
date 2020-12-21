@@ -22,7 +22,7 @@ export class TabelaComponent implements OnInit {
 
 
   TabelaZdarzen: Tabela[] = [                  // a tutaj go uzylem, powstal nowy obiekt Tabela zapisany w tabeli zdarzen
-    new Tabela('1', '10', this.alertTyp[0], '?')
+    new Tabela('1', '10', this.alertTyp[0], '?', 'link')
   ];
 
   constructor() {
