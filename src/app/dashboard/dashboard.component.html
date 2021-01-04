@@ -1,17 +1,23 @@
 <h3> dashboard works! </h3>
+<p> Co przyszło z Tabeli {{eventD2P1linkDoZdjecia}} </p>
+<p> Potwiedzenie z Podgladu {{eventPotwierdzony}}</p>
 
 <div class="container-fluid underlined">
   <div class="row">
     <div class="col-md-7">
       <p *ngIf="czyWyswietlicTabele">
-        <app-tabela></app-tabela>
+        <app-tabela [eventD2T1PotwierdzenieDiagnozy] = "eventPotwierdzony" (eventT2D1linkDoZdjecia)="przeslanieLinkuDoPodgladu($event)">
+
+        </app-tabela>
       </p>
     </div>
 
     <div class="col-md-5">
       <p *ngIf="czyWyswietlicPodlad">
-        <app-podglad></app-podglad>
+        <app-podglad [eventD2P1linkDoZdjecia] = "eventD2P1linkDoZdjecia" (eventP2D1potwierdzenieDiagnozy)="zmianaStatusuEventu($event)">
+        </app-podglad>
       </p>
     </div>
   </div>
 </div>
+
