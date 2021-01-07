@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Input, Output, EventEmitter } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { KonfiguracjaComponent } from './konfiguracja/konfiguracja.component';
@@ -10,6 +11,7 @@ import { PodgladComponent } from './dashboard/podglad/podglad.component';
 import { PreferencjeComponent } from './dashboard/preferencje/preferencje.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { OpisComponent } from './opis/opis.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     PodgladComponent,
     PreferencjeComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    OpisComponent
   ],
   imports: [
     BrowserModule
