@@ -10,11 +10,11 @@ import { EventEmitter } from '@angular/core';   // to potrzebne zeby ten parent 
 export class DashboardComponent implements OnInit {
 
   // eventD2P1linkDoZdjecia: string = "../../../assets/k5.jpg";
-  eventD2P1linkDoZdjecia: string = "";
+  eventD2P1linkDoZdjecia = '';
 
   // @Input() eventT2D1: {linkDoZdjecia: string };  //zaciagamy dane z innego komponentu
 
-  eventPotwierdzony: string = "";
+  eventPotwierdzony = '';
   czyWyswietlicTabele = true;
   czyWyswietlicPodlad = true;
   constructor() { }
@@ -22,15 +22,17 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  zmianaStatusuEventu(event){
-    if (event =="Potwierdzam")
-    this.eventPotwierdzony = "Tak";
-    else
-    this.eventPotwierdzony = "Nie"
+  zmianaStatusuEventu(event): void {
+    if (event === 'Potwierdzam') {
+      this.eventPotwierdzony = 'Tak';
+    }
+    else {
+      this.eventPotwierdzony = 'Nie';
+    }
 
   }
 
-  przeslanieLinkuDoPodgladu(event){
+  przeslanieLinkuDoPodgladu(event): void {
     this.eventD2P1linkDoZdjecia = event;
   }
 }

@@ -10,10 +10,11 @@ import { Output, EventEmitter } from '@angular/core';   // to potrzebne zeby wys
 export class PodgladComponent implements OnInit {
 
   @Input()
-  eventD2P1linkDoZdjecia: string;  //zaciagamy link do zdjecia z dashboardu a on z tabeli
+  eventD2P1linkDoZdjecia: string;  // zaciagamy link do zdjecia z dashboardu a on z tabeli
 
   @Output()
-  eventP2D1potwierdzenieDiagnozy: EventEmitter<string> = new EventEmitter<string>(); //to co bedziemy wysylac do dashboardu Potwierdzam / Zaprzeczam
+  eventP2D1potwierdzenieDiagnozy: EventEmitter<string> = new EventEmitter<string>();
+  // to co bedziemy wysylac do dashboardu Potwierdzam / Zaprzeczam
 
   constructor() { }
 

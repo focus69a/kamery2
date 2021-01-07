@@ -1,23 +1,24 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">CSK </a>
-      <img alt="Brand" src="../../assets/Onegday2.jpg" width="100" height="50">
-    </div>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CSK </a>
+            <img alt="Brand" src="../../assets/Onegday2.jpg" width="100" height="50">
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" (click)="onClickDashboard()">Monitor</a></li>
-        <li *ngIf="czyWyswietlicKlawiszRaporty"><a href="#">Raporty</a></li>
-        <li *ngIf="czyWyswietlicKlawiszKonfiguracje"><a href="#">Konfiguracja</a></li>
-        <li><a href="#" (click)="onClickHistoria()">Historia</a></li>
-        <li><a href="#" (click)="onClickPreferencje()">Preferencje</a></li>
-        <li><a href="#" (click)="onClickPomoc()">Pomoc</a></li>
-        <button type="button" class="btn btn-default navbar-btn" (click)="onClickLogowanie()">Sign in</button>
-        <button type="button" class="btn btn-default navbar-btn" (click)="onClickTest()">test alert</button>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" (click)="onClickDashboard()">Monitor</a></li>
+                <li *ngIf="czyWyswietlicKlawiszRaporty"><a href="#" (click)="onClickRaporty()">Raporty</a></li>
+                <li *ngIf="czyWyswietlicKlawiszKonfiguracje"><a href="#" (click)="onClickKonfiguracja()">Konfiguracja</a></li>
+                <li><a href="#" (click)="onClickPreferencje()">Preferencje</a></li>
+                <li><a href="#" (click)="onClickPomoc()">Pomoc</a></li>
+                <button type="button" class="btn btn-default navbar-btn" (click)="onClickLogowanie()">Sign in</button>
+                <button type="button" class="btn btn-default navbar-btn" (click)="onClickTest()">test alert</button>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>

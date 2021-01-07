@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,19 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'kamery';
-  log=[];
+  log = [];
 
-  @Input() eventH2A1ktoryEkran : string;
+  eventH2A1ktoryEkran = ''; // to trzyma info ktory ekran wyswietlac
 
   constructor(){
     this.pobierzTimeStamp();
   }
 
-pobierzTimeStamp() {
+pobierzTimeStamp(): void {
   this.log.push(new Date());
+}
+
+zmianaWyswietlaniaEkranu(event): void {
+  this.eventH2A1ktoryEkran = event;
 }
 }
