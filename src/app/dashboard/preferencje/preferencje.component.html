@@ -7,52 +7,78 @@
         <h3>Wybór kamer do obserwacji zdarzeń: </h3>
         <div class="checkbox">
             <label>
-      <input type="checkbox" value="">
-      Kamera 1
-    </label>
+        <input type="checkbox" value="">
+        Kamera 1
+      </label>
         </div>
         <div class="checkbox">
             <label>
-      <input type="checkbox" value="">
-      Kamera 2
-    </label>
+        <input type="checkbox" value="">
+        Kamera 2
+      </label>
         </div>
         <div class="checkbox">
             <label>
-      <input type="checkbox" value="">
-      Kamera 3
-    </label>
+        <input type="checkbox" value="">
+        Kamera 3
+      </label>
         </div>
         <div class="checkbox">
             <label>
-      <input type="checkbox" value="">
-      Kamera 4
-    </label>
+        <input type="checkbox" value="">
+        Kamera 4
+      </label>
         </div>
         <div class="checkbox">
             <label>
-      <input type="checkbox" value="">
-      Kamera 5
-    </label>
+        <input type="checkbox" value="">
+        Kamera 5
+      </label>
         </div>
         <div class="checkbox disabled">
             <label>
-      <input type="checkbox" value="" disabled>
-      Kamera 6
-    </label>
+        <input type="checkbox" value="" disabled>
+        Kamera 6
+      </label>
         </div>
     </div>
     <div class="col-xs-3">
         <h3>Określenie czułości na obserwowane zdarzenia: </h3>
+        <br>
+        <br>
         <label for="czuloscBrakMaseczki">Czułość na Brak Maseczki</label>
-        <input type="text" id="czuloscBrakMaseczki" class="form-control" aria-describedby="helpCzuloscBrakMaseczki" placeholder="8">
-        <span id="helpCzuloscBrakMaseczki" class="help-block">Czułość ustawić w skali 0 do 10, gdzie 10 oznacza największą czułość, a 0 wyłączenie powiadomień </span>
+        <!-- <input type="text" id="czuloscBrakMaseczki" class="form-control" aria-describedby="helpCzuloscBrakMaseczki" placeholder="8"> -->
+        <span id="helpCzuloscBrakMaseczki" class="help-block">Czułość ustawić w skali 0 do 5, gdzie 5 oznacza największą
+      czułość, a 0 wyłączenie powiadomień </span>
+        <select class="form-control">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option selected="selected">5</option>
+    </select>
 
+        <br>
+        <br>
         <label for="czuloscWysokaTemperatura">Czułość na wykrycie podwyższonej temperatury</label>
-        <input type="text" id="czuloscWysokaTemperatura" class="form-control" aria-describedby="helpCzuloscWysokaTemperatura" placeholder="8">
-        <span id="helpCzuloscWysokaTemperatura" class="help-block">Czułość ustawić w skali 0 do 10, gdzie 10 oznacza największą czułość, a 0 wyłączenie powiadomień </span>
+        <!-- <input type="text" id="czuloscWysokaTemperatura" class="form-control" aria-describedby="helpCzuloscWysokaTemperatura" placeholder="8"> -->
+        <span id="helpCzuloscWysokaTemperatura" class="help-block">Czułość ustawić w skali 0 do 5, gdzie 5 oznacza
+            największą czułość, a 0 wyłączenie powiadomień </span>
 
-        <button type="submit" class="btn btn-default">Submit</button>
+        <select id="czuloscWysokaTemperatura" class="form-control" aria-describedby="helpCzuloscWysokaTemperatura">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option selected="selected">3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-lg">Zapisz</button>
     </div>
 
 </div>
